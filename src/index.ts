@@ -10,3 +10,5 @@ export function saudacao(nome: string): string {
 export function soma(a: number, b: number): number {
   return a + b;
 }
+
+export { slugify } from './slugify';

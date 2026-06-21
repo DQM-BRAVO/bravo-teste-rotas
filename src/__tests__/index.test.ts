@@ -1,4 +1,4 @@
-import { saudacao, soma } from '../index';
+import { saudacao, soma, slugify } from '../index';
 
 describe('saudacao', () => {
   it('retorna saudação com o nome fornecido', () => {
@@ -21,5 +21,11 @@ describe('soma', () => {
 
   it('soma números negativos', () => {
     expect(soma(-1, -1)).toBe(-2);
+  });
+});
+
+describe('slugify (re-export de index)', () => {
+  it('converte texto com acento em slug via index', () => {
+    expect(slugify('Olá, Mundo!')).toBe('ola-mundo');
   });
 });
