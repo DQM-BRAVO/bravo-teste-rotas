@@ -12,3 +12,4 @@ export function soma(a: number, b: number): number {
 }
 
 export { capitalize } from './capitalize';
+export { calcularFrete } from './calcularFrete';
