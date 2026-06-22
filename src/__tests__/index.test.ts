@@ -1,4 +1,4 @@
-import { saudacao, soma } from '../index';
+import { saudacao, soma, capitalize, calcularFrete } from '../index';
 
 describe('saudacao', () => {
   it('retorna saudação com o nome fornecido', () => {
@@ -21,5 +21,15 @@ describe('soma', () => {
 
   it('soma números negativos', () => {
     expect(soma(-1, -1)).toBe(-2);
+  });
+});
+
+describe('re-exports do index', () => {
+  it('capitalize está acessível via index', () => {
+    expect(capitalize('hello world')).toBe('Hello World');
+  });
+
+  it('calcularFrete está acessível via index', () => {
+    expect(calcularFrete(0.5, '01310100', 50)).toBe(10.0);
   });
 });

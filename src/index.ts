@@ -10,3 +10,6 @@ export function saudacao(nome: string): string {
 export function soma(a: number, b: number): number {
   return a + b;
 }
+
+export { capitalize } from './capitalize';
+export { calcularFrete } from './calcularFrete';
